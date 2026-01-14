@@ -251,9 +251,22 @@ function displayResults(results) {
             linksContainer.style.display = 'block';
         }
 
-        // Hide image section completely - will add real images later
+        // Show image if available
         const productImageContainer = document.querySelector('.product-image');
-        productImageContainer.style.display = 'none';
+        const productImage = document.getElementById('productImage');
+
+        if (results.product.imageUrl && results.product.imageUrl.startsWith('http')) {
+            productImage.src = results.product.imageUrl;
+            productImage.alt = results.product.name;
+            productImageContainer.style.display = 'block';
+
+            // Handle image load error
+            productImage.onerror = function() {
+                productImageContainer.style.display = 'none';
+            };
+        } else {
+            productImageContainer.style.display = 'none';
+        }
     } else {
         document.getElementById('resultProduct').textContent =
             'No suitable product found. Please contact us for a custom solution.';
