@@ -13,9 +13,9 @@
       "height": 1200
     },
     "features": ["Basic filtration", "Garden irrigation"],
-    "manualUrl": "https://www.rewatec.de/downloads/neo-800-manual.pdf",
-    "productUrl": "https://www.rewatec.de/products/neo-800-garden-basic",
-    "imageUrl": "images/neo-800.jpg"
+    "manualUrl": "",
+    "productUrl": "https://www.premiertechaqua.com/storage-solutions/water-storage-tank",
+    "imageUrl": ""
   },
   {
     "id": 2,
@@ -31,9 +31,9 @@
       "height": 1400
     },
     "features": ["Professional filtration", "Quiet inlet", "Garden irrigation"],
-    "manualUrl": "https://www.rewatec.de/downloads/neo-1500-manual.pdf",
-    "productUrl": "https://www.rewatec.de/products/neo-1500-garden-profi",
-    "imageUrl": "images/neo-1500.jpg"
+    "manualUrl": "",
+    "productUrl": "https://www.premiertechaqua.com/storage-solutions/water-storage-tank",
+    "imageUrl": ""
   },
   {
     "id": 3,
@@ -49,9 +49,9 @@
       "height": 1600
     },
     "features": ["Advanced filtration", "Multi-stage system", "Garden irrigation"],
-    "manualUrl": "https://www.rewatec.de/downloads/neo-2700-manual.pdf",
-    "productUrl": "https://www.rewatec.de/products/neo-2700-garden-premium",
-    "imageUrl": "images/neo-2700.jpg"
+    "manualUrl": "",
+    "productUrl": "https://www.premiertechaqua.com/storage-solutions/water-storage-tank",
+    "imageUrl": ""
   },
   {
     "id": 4,
@@ -67,9 +67,9 @@
       "height": 1700
     },
     "features": ["Basic filtration", "Garden + toilet", "Simple system"],
-    "manualUrl": "https://www.rewatec.de/downloads/neo-3000-manual.pdf",
-    "productUrl": "https://www.rewatec.de/products/neo-3000-house-basic",
-    "imageUrl": "images/neo-3000.jpg"
+    "manualUrl": "",
+    "productUrl": "https://www.premiertechaqua.com/storage-solutions/water-storage-tank",
+    "imageUrl": ""
   },
   {
     "id": 5,
@@ -85,9 +85,9 @@
       "height": 1800
     },
     "features": ["Filter-based system", "Quiet inlet", "Garden + toilet + washing machine"],
-    "manualUrl": "https://www.rewatec.de/downloads/neo-4500-manual.pdf",
-    "productUrl": "https://www.rewatec.de/products/neo-4500-house-comfort",
-    "imageUrl": "images/neo-4500.jpg"
+    "manualUrl": "",
+    "productUrl": "https://www.premiertechaqua.com/storage-solutions/water-storage-tank",
+    "imageUrl": ""
   },
   {
     "id": 6,
@@ -103,9 +103,9 @@
       "height": 2000
     },
     "features": ["Advanced filtration", "Multi-zone control", "Full house integration"],
-    "manualUrl": "https://www.rewatec.de/downloads/neo-6500-manual.pdf",
-    "productUrl": "https://www.rewatec.de/products/neo-6500-house-premium",
-    "imageUrl": "images/neo-6500.jpg"
+    "manualUrl": "",
+    "productUrl": "https://www.premiertechaqua.com/storage-solutions/water-storage-tank",
+    "imageUrl": ""
   },
   {
     "id": 7,
@@ -121,9 +121,9 @@
       "height": 2100
     },
     "features": ["Professional grade", "Advanced monitoring", "Full house + commercial"],
-    "manualUrl": "https://www.rewatec.de/downloads/profi-neo-8000-manual.pdf",
-    "productUrl": "https://www.rewatec.de/products/profi-neo-8000",
-    "imageUrl": "images/profi-neo-8000.jpg"
+    "manualUrl": "",
+    "productUrl": "https://www.premiertechaqua.com/storage-solutions/water-storage-tank",
+    "imageUrl": ""
   },
   {
     "id": 8,
@@ -139,9 +139,9 @@
       "height": 2200
     },
     "features": ["Maximum capacity", "Smart control system", "Commercial grade"],
-    "manualUrl": "https://www.rewatec.de/downloads/profi-neo-10000-manual.pdf",
-    "productUrl": "https://www.rewatec.de/products/profi-neo-10000",
-    "imageUrl": "images/profi-neo-10000.jpg"
+    "manualUrl": "",
+    "productUrl": "https://www.premiertechaqua.com/storage-solutions/water-storage-tank",
+    "imageUrl": ""
   },
   {
     "id": 9,
@@ -157,9 +157,9 @@
       "height": 800
     },
     "features": ["Low profile", "Limited access areas", "Garden irrigation"],
-    "manualUrl": "https://www.rewatec.de/downloads/flat-tank-1500-manual.pdf",
-    "productUrl": "https://www.rewatec.de/products/flat-tank-1500",
-    "imageUrl": "images/flat-tank-1500.jpg"
+    "manualUrl": "",
+    "productUrl": "https://www.premiertechaqua.com/storage-solutions/water-storage-tank",
+    "imageUrl": ""
   },
   {
     "id": 10,
@@ -175,8 +175,8 @@
       "height": 900
     },
     "features": ["Low profile", "Large capacity", "Garden + toilet"],
-    "manualUrl": "https://www.rewatec.de/downloads/flat-tank-3000-manual.pdf",
-    "productUrl": "https://www.rewatec.de/products/flat-tank-3000",
-    "imageUrl": "images/flat-tank-3000.jpg"
+    "manualUrl": "",
+    "productUrl": "https://www.premiertechaqua.com/storage-solutions/water-storage-tank",
+    "imageUrl": ""
   }
 ]

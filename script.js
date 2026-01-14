@@ -225,26 +225,42 @@ function displayResults(results) {
         document.getElementById('resultProduct').textContent =
             `${results.product.name} (${results.product.capacity} L)`;
 
-        // Update links
-        document.getElementById('downloadManual').href = results.product.manualUrl;
-        document.getElementById('viewProduct').href = results.product.productUrl;
+        // Update links - only show if real URLs exist
+        const downloadLink = document.getElementById('downloadManual');
+        const productLink = document.getElementById('viewProduct');
+        const linksContainer = document.querySelector('.result-actions');
 
-        // Update image (using a placeholder since actual images may not exist)
-        const productImage = document.getElementById('productImage');
-        productImage.src = results.product.imageUrl;
-        productImage.alt = results.product.name;
+        if (results.product.manualUrl && results.product.manualUrl.startsWith('http')) {
+            downloadLink.href = results.product.manualUrl;
+            downloadLink.style.display = 'inline-block';
+        } else {
+            downloadLink.style.display = 'none';
+        }
 
-        // Handle image load error
-        productImage.onerror = function() {
-            this.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="300"%3E%3Crect fill="%23E6F3FA" width="400" height="300"/%3E%3Ctext x="50%25" y="50%25" text-anchor="middle" dy=".3em" fill="%230078BE" font-family="Arial" font-size="20"%3E' +
-                  encodeURIComponent(results.product.name) + '%3C/text%3E%3C/svg%3E';
-        };
+        if (results.product.productUrl && results.product.productUrl.startsWith('http')) {
+            productLink.href = results.product.productUrl;
+            productLink.style.display = 'inline-block';
+        } else {
+            productLink.style.display = 'none';
+        }
+
+        // Hide links container if both links are hidden
+        if (!results.product.manualUrl && !results.product.productUrl) {
+            linksContainer.style.display = 'none';
+        } else {
+            linksContainer.style.display = 'block';
+        }
+
+        // Hide image section completely - will add real images later
+        const productImageContainer = document.querySelector('.product-image');
+        productImageContainer.style.display = 'none';
     } else {
         document.getElementById('resultProduct').textContent =
             'No suitable product found. Please contact us for a custom solution.';
         document.getElementById('downloadManual').style.display = 'none';
         document.getElementById('viewProduct').style.display = 'none';
-        document.getElementById('productImage').style.display = 'none';
+        document.querySelector('.product-image').style.display = 'none';
+        document.querySelector('.result-actions').style.display = 'none';
     }
 
     // Show results section
