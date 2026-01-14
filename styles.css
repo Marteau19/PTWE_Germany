@@ -1,0 +1,278 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --rewatec-blue: #0078BE;
+    --rewatec-dark-blue: #005A8C;
+    --rewatec-light-blue: #E6F3FA;
+    --text-dark: #333333;
+    --text-light: #666666;
+    --border-color: #E0E0E0;
+    --success-green: #5CB85C;
+    --bg-light: #F8F9FA;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: white;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    border-bottom: 3px solid var(--rewatec-blue);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo h1 {
+    color: var(--rewatec-blue);
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+/* Configurator Card */
+.configurator-card {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.configurator-card h2 {
+    color: var(--text-dark);
+    font-size: 1.75rem;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--rewatec-light-blue);
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--text-dark);
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--rewatec-blue);
+    box-shadow: 0 0 0 3px rgba(0, 120, 190, 0.1);
+}
+
+/* Buttons */
+.btn-calculate {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--success-green);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    margin-top: 10px;
+}
+
+.btn-calculate:hover {
+    background-color: #4CAF50;
+    transform: translateY(-1px);
+}
+
+.btn-calculate:active {
+    transform: translateY(0);
+}
+
+.btn-email {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--rewatec-blue);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.btn-email:hover {
+    background-color: var(--rewatec-dark-blue);
+}
+
+.btn-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--rewatec-light-blue);
+    color: var(--rewatec-blue);
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-link:hover {
+    background-color: var(--rewatec-blue);
+    color: white;
+}
+
+/* Results Section */
+.results {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 2px solid var(--rewatec-light-blue);
+}
+
+.results.hidden {
+    display: none;
+}
+
+.results h3 {
+    color: var(--rewatec-blue);
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.result-item.highlight {
+    background-color: var(--rewatec-light-blue);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border-bottom: none;
+    font-weight: 600;
+}
+
+.result-label {
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+.result-item.highlight .result-label {
+    color: var(--rewatec-dark-blue);
+}
+
+.result-value {
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.result-item.highlight .result-value {
+    color: var(--rewatec-blue);
+}
+
+.result-actions {
+    margin: 20px 0;
+}
+
+.product-image {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px 0;
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .configurator-card {
+        padding: 20px;
+    }
+
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+
+    .configurator-card h2 {
+        font-size: 1.4rem;
+    }
+
+    .result-item {
+        flex-direction: column;
+    }
+
+    .result-value {
+        margin-top: 5px;
+    }
+
+    .btn-link {
+        display: block;
+        margin-right: 0;
+        text-align: center;
+    }
+}
+
+/* Loading State */
+.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* Error Messages */
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border: 1px solid #f5c6cb;
+}
