@@ -1,0 +1,275 @@
+{
+  "rainData": [
+    {
+      "plzRange": { "start": "01000", "end": "01999" },
+      "region": "Dresden",
+      "annualRainfall": 635
+    },
+    {
+      "plzRange": { "start": "02000", "end": "03999" },
+      "region": "Cottbus",
+      "annualRainfall": 575
+    },
+    {
+      "plzRange": { "start": "04000", "end": "04999" },
+      "region": "Leipzig",
+      "annualRainfall": 520
+    },
+    {
+      "plzRange": { "start": "06000", "end": "06999" },
+      "region": "Halle",
+      "annualRainfall": 485
+    },
+    {
+      "plzRange": { "start": "07000", "end": "07999" },
+      "region": "Jena",
+      "annualRainfall": 585
+    },
+    {
+      "plzRange": { "start": "08000", "end": "09999" },
+      "region": "Chemnitz",
+      "annualRainfall": 710
+    },
+    {
+      "plzRange": { "start": "10000", "end": "14999" },
+      "region": "Berlin",
+      "annualRainfall": 580
+    },
+    {
+      "plzRange": { "start": "15000", "end": "19999" },
+      "region": "Brandenburg",
+      "annualRainfall": 540
+    },
+    {
+      "plzRange": { "start": "20000", "end": "21999" },
+      "region": "Hamburg",
+      "annualRainfall": 770
+    },
+    {
+      "plzRange": { "start": "22000", "end": "23999" },
+      "region": "Hamburg Region",
+      "annualRainfall": 745
+    },
+    {
+      "plzRange": { "start": "24000", "end": "25999" },
+      "region": "Kiel",
+      "annualRainfall": 795
+    },
+    {
+      "plzRange": { "start": "26000", "end": "27999" },
+      "region": "Oldenburg",
+      "annualRainfall": 780
+    },
+    {
+      "plzRange": { "start": "28000", "end": "28999" },
+      "region": "Bremen",
+      "annualRainfall": 700
+    },
+    {
+      "plzRange": { "start": "29000", "end": "29999" },
+      "region": "Osnabrück",
+      "annualRainfall": 780
+    },
+    {
+      "plzRange": { "start": "30000", "end": "31999" },
+      "region": "Hannover",
+      "annualRainfall": 650
+    },
+    {
+      "plzRange": { "start": "32000", "end": "33999" },
+      "region": "Bielefeld",
+      "annualRainfall": 750
+    },
+    {
+      "plzRange": { "start": "34000", "end": "34999" },
+      "region": "Kassel",
+      "annualRainfall": 645
+    },
+    {
+      "plzRange": { "start": "35000", "end": "36999" },
+      "region": "Marburg",
+      "annualRainfall": 680
+    },
+    {
+      "plzRange": { "start": "37000", "end": "37999" },
+      "region": "Göttingen",
+      "annualRainfall": 680
+    },
+    {
+      "plzRange": { "start": "38000", "end": "38999" },
+      "region": "Braunschweig",
+      "annualRainfall": 625
+    },
+    {
+      "plzRange": { "start": "39000", "end": "39999" },
+      "region": "Magdeburg",
+      "annualRainfall": 490
+    },
+    {
+      "plzRange": { "start": "40000", "end": "42999" },
+      "region": "Düsseldorf",
+      "annualRainfall": 795
+    },
+    {
+      "plzRange": { "start": "44000", "end": "44999" },
+      "region": "Dortmund",
+      "annualRainfall": 815
+    },
+    {
+      "plzRange": { "start": "45000", "end": "45999" },
+      "region": "Essen",
+      "annualRainfall": 820
+    },
+    {
+      "plzRange": { "start": "46000", "end": "47999" },
+      "region": "Duisburg",
+      "annualRainfall": 770
+    },
+    {
+      "plzRange": { "start": "48000", "end": "48999" },
+      "region": "Münster",
+      "annualRainfall": 765
+    },
+    {
+      "plzRange": { "start": "49000", "end": "49999" },
+      "region": "Osnabrück Region",
+      "annualRainfall": 780
+    },
+    {
+      "plzRange": { "start": "50000", "end": "53999" },
+      "region": "Köln",
+      "annualRainfall": 795
+    },
+    {
+      "plzRange": { "start": "54000", "end": "56999" },
+      "region": "Koblenz",
+      "annualRainfall": 680
+    },
+    {
+      "plzRange": { "start": "57000", "end": "57999" },
+      "region": "Siegen",
+      "annualRainfall": 970
+    },
+    {
+      "plzRange": { "start": "58000", "end": "59999" },
+      "region": "Hagen",
+      "annualRainfall": 920
+    },
+    {
+      "plzRange": { "start": "60000", "end": "63999" },
+      "region": "Frankfurt",
+      "annualRainfall": 645
+    },
+    {
+      "plzRange": { "start": "64000", "end": "65999" },
+      "region": "Darmstadt",
+      "annualRainfall": 680
+    },
+    {
+      "plzRange": { "start": "66000", "end": "66999" },
+      "region": "Saarbrücken",
+      "annualRainfall": 835
+    },
+    {
+      "plzRange": { "start": "67000", "end": "67999" },
+      "region": "Ludwigshafen",
+      "annualRainfall": 595
+    },
+    {
+      "plzRange": { "start": "68000", "end": "69999" },
+      "region": "Mannheim",
+      "annualRainfall": 650
+    },
+    {
+      "plzRange": { "start": "70000", "end": "73999" },
+      "region": "Stuttgart",
+      "annualRainfall": 680
+    },
+    {
+      "plzRange": { "start": "74000", "end": "74999" },
+      "region": "Heilbronn",
+      "annualRainfall": 685
+    },
+    {
+      "plzRange": { "start": "75000", "end": "76999" },
+      "region": "Karlsruhe",
+      "annualRainfall": 735
+    },
+    {
+      "plzRange": { "start": "77000", "end": "79999" },
+      "region": "Freiburg",
+      "annualRainfall": 935
+    },
+    {
+      "plzRange": { "start": "80000", "end": "81999" },
+      "region": "München",
+      "annualRainfall": 955
+    },
+    {
+      "plzRange": { "start": "82000", "end": "82999" },
+      "region": "München Süd",
+      "annualRainfall": 1050
+    },
+    {
+      "plzRange": { "start": "83000", "end": "83999" },
+      "region": "Rosenheim",
+      "annualRainfall": 1150
+    },
+    {
+      "plzRange": { "start": "84000", "end": "85999" },
+      "region": "Landshut",
+      "annualRainfall": 820
+    },
+    {
+      "plzRange": { "start": "86000", "end": "86999" },
+      "region": "Augsburg",
+      "annualRainfall": 820
+    },
+    {
+      "plzRange": { "start": "87000", "end": "87999" },
+      "region": "Kempten",
+      "annualRainfall": 1180
+    },
+    {
+      "plzRange": { "start": "88000", "end": "88999" },
+      "region": "Ravensburg",
+      "annualRainfall": 1050
+    },
+    {
+      "plzRange": { "start": "89000", "end": "89999" },
+      "region": "Ulm",
+      "annualRainfall": 730
+    },
+    {
+      "plzRange": { "start": "90000", "end": "91999" },
+      "region": "Nürnberg",
+      "annualRainfall": 640
+    },
+    {
+      "plzRange": { "start": "92000", "end": "93999" },
+      "region": "Regensburg",
+      "annualRainfall": 690
+    },
+    {
+      "plzRange": { "start": "94000", "end": "94999" },
+      "region": "Passau",
+      "annualRainfall": 830
+    },
+    {
+      "plzRange": { "start": "95000", "end": "96999" },
+      "region": "Bayreuth",
+      "annualRainfall": 735
+    },
+    {
+      "plzRange": { "start": "97000", "end": "97999" },
+      "region": "Würzburg",
+      "annualRainfall": 595
+    },
+    {
+      "plzRange": { "start": "98000", "end": "99999" },
+      "region": "Erfurt",
+      "annualRainfall": 550
+    }
+  ],
+  "defaultRainfall": 700
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rewatec Cistern Configurator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1>REWATEC</h1>
+            </div>
+        </header>
+
+        <main>
+            <div class="configurator-card">
+                <h2>Cistern Configurator</h2>
+
+                <form id="cisternForm">
+                    <!-- Roof Type -->
+                    <div class="form-group">
+                        <label for="roofType">Roof Type (Runoff Coefficient):</label>
+                        <select id="roofType" required>
+                            <option value="">Select roof type</option>
+                            <option value="0.9">Flat Roof (0.9)</option>
+                            <option value="0.8">Pitched Roof - Tiles (0.8)</option>
+                            <option value="0.85">Pitched Roof - Metal (0.85)</option>
+                            <option value="0.95">Pitched Roof - Concrete (0.95)</option>
+                        </select>
+                    </div>
+
+                    <!-- House Length -->
+                    <div class="form-group">
+                        <label for="houseLength">House Length (m):</label>
+                        <input type="number" id="houseLength" min="0" step="0.1" required>
+                    </div>
+
+                    <!-- House Width -->
+                    <div class="form-group">
+                        <label for="houseWidth">House Width (m):</label>
+                        <input type="number" id="houseWidth" min="0" step="0.1" required>
+                    </div>
+
+                    <!-- Garden Area -->
+                    <div class="form-group">
+                        <label for="gardenArea">Garden Area (m²):</label>
+                        <input type="number" id="gardenArea" min="0" step="1" required>
+                    </div>
+
+                    <!-- ZIP Code -->
+                    <div class="form-group">
+                        <label for="zipCode">ZIP Code:</label>
+                        <input type="text" id="zipCode" pattern="[0-9]{5}" maxlength="5" required>
+                    </div>
+
+                    <!-- Irrigation Demand -->
+                    <div class="form-group">
+                        <label for="irrigationDemand">Irrigation Demand:</label>
+                        <select id="irrigationDemand" required>
+                            <option value="">Select irrigation demand</option>
+                            <option value="low">Low</option>
+                            <option value="medium">Medium</option>
+                            <option value="high">High</option>
+                        </select>
+                    </div>
+
+                    <!-- Accessibility -->
+                    <div class="form-group">
+                        <label for="accessibility">Accessibility:</label>
+                        <select id="accessibility" required>
+                            <option value="">Select accessibility</option>
+                            <option value="walkable">Walkable</option>
+                            <option value="vehicle">Vehicle</option>
+                        </select>
+                    </div>
+
+                    <!-- Connect Toilet -->
+                    <div class="form-group">
+                        <label for="connectToilet">Connect Toilet?</label>
+                        <select id="connectToilet" required>
+                            <option value="no">No</option>
+                            <option value="yes">Yes</option>
+                        </select>
+                    </div>
+
+                    <!-- Connect Washing Machine -->
+                    <div class="form-group">
+                        <label for="connectWashingMachine">Connect Washing Machine?</label>
+                        <select id="connectWashingMachine" required>
+                            <option value="no">No</option>
+                            <option value="yes">Yes</option>
+                        </select>
+                    </div>
+
+                    <!-- Number of People -->
+                    <div class="form-group">
+                        <label for="numPeople">Number of People in Household:</label>
+                        <input type="number" id="numPeople" min="1" max="20" required>
+                    </div>
+
+                    <!-- Comfort Level -->
+                    <div class="form-group">
+                        <label for="comfortLevel">Comfort Level:</label>
+                        <select id="comfortLevel" required>
+                            <option value="">Select comfort level</option>
+                            <option value="basic">Basic - Simple system</option>
+                            <option value="comfortable">Comfortable - with filter-based and quiet inlet</option>
+                            <option value="premium">Premium - with advanced filtration</option>
+                        </select>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn-calculate">Calculate Cistern</button>
+                </form>
+
+                <!-- Results Section -->
+                <div id="results" class="results hidden">
+                    <h3>Calculation Results</h3>
+
+                    <div class="result-item">
+                        <span class="result-label">House Area:</span>
+                        <span class="result-value" id="resultHouseArea">-</span>
+                    </div>
+
+                    <div class="result-item">
+                        <span class="result-label">Rain Amount:</span>
+                        <span class="result-value" id="resultRainAmount">-</span>
+                    </div>
+
+                    <div class="result-item">
+                        <span class="result-label">Rain Total:</span>
+                        <span class="result-value" id="resultRainTotal">-</span>
+                    </div>
+
+                    <div class="result-item">
+                        <span class="result-label">Total Water Demand:</span>
+                        <span class="result-value" id="resultWaterDemand">-</span>
+                    </div>
+
+                    <div class="result-item highlight">
+                        <span class="result-label">Recommended Cistern Size:</span>
+                        <span class="result-value" id="resultCisternSize">-</span>
+                    </div>
+
+                    <div class="result-item highlight">
+                        <span class="result-label">Recommended Product:</span>
+                        <span class="result-value" id="resultProduct">-</span>
+                    </div>
+
+                    <div class="result-actions">
+                        <a href="#" id="downloadManual" class="btn-link" target="_blank">Download Manual</a>
+                        <a href="#" id="viewProduct" class="btn-link" target="_blank">View Product</a>
+                    </div>
+
+                    <div class="product-image">
+                        <img id="productImage" src="" alt="Recommended Product">
+                    </div>
+
+                    <button type="button" class="btn-email" id="emailResults">Email Results</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Rewatec - Rainwater Recovery Systems</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

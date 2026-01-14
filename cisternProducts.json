@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "name": "NEO 800 Garden Basic",
+    "capacity": 800,
+    "type": "garden",
+    "category": "basic",
+    "accessibility": "walkable",
+    "price": 850,
+    "dimensions": {
+      "length": 1200,
+      "width": 800,
+      "height": 1200
+    },
+    "features": ["Basic filtration", "Garden irrigation"],
+    "manualUrl": "https://www.rewatec.de/downloads/neo-800-manual.pdf",
+    "productUrl": "https://www.rewatec.de/products/neo-800-garden-basic",
+    "imageUrl": "images/neo-800.jpg"
+  },
+  {
+    "id": 2,
+    "name": "NEO 1500 Garden Profi",
+    "capacity": 1500,
+    "type": "garden",
+    "category": "comfortable",
+    "accessibility": "walkable",
+    "price": 1450,
+    "dimensions": {
+      "length": 1500,
+      "width": 1000,
+      "height": 1400
+    },
+    "features": ["Professional filtration", "Quiet inlet", "Garden irrigation"],
+    "manualUrl": "https://www.rewatec.de/downloads/neo-1500-manual.pdf",
+    "productUrl": "https://www.rewatec.de/products/neo-1500-garden-profi",
+    "imageUrl": "images/neo-1500.jpg"
+  },
+  {
+    "id": 3,
+    "name": "NEO 2700 Garden Premium",
+    "capacity": 2700,
+    "type": "garden",
+    "category": "premium",
+    "accessibility": "vehicle",
+    "price": 2350,
+    "dimensions": {
+      "length": 1800,
+      "width": 1200,
+      "height": 1600
+    },
+    "features": ["Advanced filtration", "Multi-stage system", "Garden irrigation"],
+    "manualUrl": "https://www.rewatec.de/downloads/neo-2700-manual.pdf",
+    "productUrl": "https://www.rewatec.de/products/neo-2700-garden-premium",
+    "imageUrl": "images/neo-2700.jpg"
+  },
+  {
+    "id": 4,
+    "name": "NEO 3000 House Basic",
+    "capacity": 3000,
+    "type": "house",
+    "category": "basic",
+    "accessibility": "vehicle",
+    "price": 2800,
+    "dimensions": {
+      "length": 2000,
+      "width": 1200,
+      "height": 1700
+    },
+    "features": ["Basic filtration", "Garden + toilet", "Simple system"],
+    "manualUrl": "https://www.rewatec.de/downloads/neo-3000-manual.pdf",
+    "productUrl": "https://www.rewatec.de/products/neo-3000-house-basic",
+    "imageUrl": "images/neo-3000.jpg"
+  },
+  {
+    "id": 5,
+    "name": "NEO 4500 House Comfort",
+    "capacity": 4500,
+    "type": "house",
+    "category": "comfortable",
+    "accessibility": "vehicle",
+    "price": 3650,
+    "dimensions": {
+      "length": 2200,
+      "width": 1400,
+      "height": 1800
+    },
+    "features": ["Filter-based system", "Quiet inlet", "Garden + toilet + washing machine"],
+    "manualUrl": "https://www.rewatec.de/downloads/neo-4500-manual.pdf",
+    "productUrl": "https://www.rewatec.de/products/neo-4500-house-comfort",
+    "imageUrl": "images/neo-4500.jpg"
+  },
+  {
+    "id": 6,
+    "name": "NEO 6500 House Premium",
+    "capacity": 6500,
+    "type": "house",
+    "category": "premium",
+    "accessibility": "vehicle",
+    "price": 4850,
+    "dimensions": {
+      "length": 2500,
+      "width": 1600,
+      "height": 2000
+    },
+    "features": ["Advanced filtration", "Multi-zone control", "Full house integration"],
+    "manualUrl": "https://www.rewatec.de/downloads/neo-6500-manual.pdf",
+    "productUrl": "https://www.rewatec.de/products/neo-6500-house-premium",
+    "imageUrl": "images/neo-6500.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Profi NEO 8000",
+    "capacity": 8000,
+    "type": "house",
+    "category": "premium",
+    "accessibility": "vehicle",
+    "price": 6200,
+    "dimensions": {
+      "length": 3000,
+      "width": 1800,
+      "height": 2100
+    },
+    "features": ["Professional grade", "Advanced monitoring", "Full house + commercial"],
+    "manualUrl": "https://www.rewatec.de/downloads/profi-neo-8000-manual.pdf",
+    "productUrl": "https://www.rewatec.de/products/profi-neo-8000",
+    "imageUrl": "images/profi-neo-8000.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Profi NEO 10000",
+    "capacity": 10000,
+    "type": "house",
+    "category": "premium",
+    "accessibility": "vehicle",
+    "price": 7800,
+    "dimensions": {
+      "length": 3500,
+      "width": 2000,
+      "height": 2200
+    },
+    "features": ["Maximum capacity", "Smart control system", "Commercial grade"],
+    "manualUrl": "https://www.rewatec.de/downloads/profi-neo-10000-manual.pdf",
+    "productUrl": "https://www.rewatec.de/products/profi-neo-10000",
+    "imageUrl": "images/profi-neo-10000.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Flat Tank 1500",
+    "capacity": 1500,
+    "type": "garden",
+    "category": "basic",
+    "accessibility": "walkable",
+    "price": 1250,
+    "dimensions": {
+      "length": 2000,
+      "width": 1500,
+      "height": 800
+    },
+    "features": ["Low profile", "Limited access areas", "Garden irrigation"],
+    "manualUrl": "https://www.rewatec.de/downloads/flat-tank-1500-manual.pdf",
+    "productUrl": "https://www.rewatec.de/products/flat-tank-1500",
+    "imageUrl": "images/flat-tank-1500.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Flat Tank 3000",
+    "capacity": 3000,
+    "type": "garden",
+    "category": "comfortable",
+    "accessibility": "vehicle",
+    "price": 2100,
+    "dimensions": {
+      "length": 2500,
+      "width": 2000,
+      "height": 900
+    },
+    "features": ["Low profile", "Large capacity", "Garden + toilet"],
+    "manualUrl": "https://www.rewatec.de/downloads/flat-tank-3000-manual.pdf",
+    "productUrl": "https://www.rewatec.de/products/flat-tank-3000",
+    "imageUrl": "images/flat-tank-3000.jpg"
+  }
+]
