@@ -120,19 +120,15 @@ function calculateCistern(formData) {
 
 // Get rainfall by ZIP code
 function getRainfallByZIP(zipCode) {
-    const zip = parseInt(zipCode);
+    // rainData is now an array of {PLZ, rainfall} objects
+    const entry = rainData.find(item => item.PLZ === zipCode);
 
-    for (const data of rainData.rainData) {
-        const start = parseInt(data.plzRange.start);
-        const end = parseInt(data.plzRange.end);
-
-        if (zip >= start && zip <= end) {
-            return data.annualRainfall;
-        }
+    if (entry) {
+        return entry.rainfall;
     }
 
-    // Return default if not found
-    return rainData.defaultRainfall;
+    // Return default if not found (700mm is typical German average)
+    return 700;
 }
 
 // Calculate water demand (liters/year)
