@@ -86,27 +86,23 @@ function calculateCistern(formData) {
     // Get annual rainfall based on ZIP code
     const annualRainfall = getRainfallByZIP(formData.zipCode);
 
-    // Calculate total rain collected (m³/year)
-    // Formula: Roof Area (m²) × Runoff Coefficient × Annual Rainfall (mm) / 1000
-    const rainTotal = (houseArea * formData.roofType * annualRainfall) / 1000;
+    // Calculate total rain yield (L/year)
+    // Formula: Roof Area (m²) × Runoff Coefficient × Annual Rainfall (mm)
+    const rainYield = houseArea * formData.roofType * annualRainfall;
 
     // Calculate water demand
     const waterDemand = calculateWaterDemand(formData);
 
-    // Calculate recommended cistern size
-    // Use the smaller of: 50% of annual rain collection or water demand × storage factor
-    const storageFactor = 21; // 21 days storage recommended
-    const demandBasedSize = (waterDemand / 365) * storageFactor;
-    const rainBasedSize = rainTotal * 0.06; // 6% of annual rainfall (approx 21 days)
-
-    let recommendedSize = Math.min(demandBasedSize, rainBasedSize);
+    // Calculate recommended cistern size using prototype formula
+    // Formula: ((rainYield + totalDemand) / 2) * 0.06
+    let recommendedSize = Math.round(((rainYield + waterDemand) / 2) * 0.06);
 
     // Ensure minimum size based on usage
     const minSize = getMinimumSize(formData);
     recommendedSize = Math.max(recommendedSize, minSize);
 
-    // Round up to nearest 100L
-    recommendedSize = Math.ceil(recommendedSize / 0.1) * 0.1;
+    // Convert to m³ for display
+    const recommendedSizeM3 = recommendedSize / 1000;
 
     // Find suitable product
     const product = findSuitableProduct(recommendedSize, formData);
@@ -114,9 +110,10 @@ function calculateCistern(formData) {
     return {
         houseArea: houseArea.toFixed(2),
         annualRainfall: annualRainfall,
-        rainTotal: rainTotal.toFixed(2),
+        rainYield: rainYield.toFixed(0),
         waterDemand: waterDemand.toFixed(0),
-        recommendedSize: recommendedSize.toFixed(1),
+        recommendedSize: recommendedSize,
+        recommendedSizeM3: recommendedSizeM3.toFixed(1),
         product: product
     };
 }
@@ -138,44 +135,41 @@ function getRainfallByZIP(zipCode) {
     return rainData.defaultRainfall;
 }
 
-// Calculate daily water demand (liters/year)
+// Calculate water demand (liters/year)
 function calculateWaterDemand(formData) {
-    let dailyDemand = 0;
+    let totalDemand = 0;
 
-    // Garden irrigation demand (liters per m² per year)
-    const irrigationRates = {
-        'low': 20,      // 20L/m²/year
-        'medium': 35,   // 35L/m²/year
-        'high': 50      // 50L/m²/year
+    // Garden irrigation demand - convert named values to numeric
+    const wateringMap = {
+        'low': 1,
+        'medium': 2,
+        'high': 3
     };
+    const wateringValue = wateringMap[formData.irrigationDemand];
+    const waterNeed = formData.gardenArea * wateringValue;
 
-    dailyDemand += formData.gardenArea * irrigationRates[formData.irrigationDemand];
+    // Household water usage
+    const householdUse =
+        (formData.connectToilet ? formData.numPeople * 16425 : 0) +
+        (formData.connectWashingMachine ? formData.numPeople * 3500 : 0);
 
-    // Toilet usage (40 liters per person per day)
-    if (formData.connectToilet) {
-        dailyDemand += formData.numPeople * 40 * 365;
-    }
+    totalDemand = waterNeed + householdUse;
 
-    // Washing machine (50 liters per person per week)
-    if (formData.connectWashingMachine) {
-        dailyDemand += formData.numPeople * 50 * 52;
-    }
-
-    return dailyDemand;
+    return totalDemand;
 }
 
-// Get minimum cistern size based on usage
+// Get minimum cistern size based on usage (in liters)
 function getMinimumSize(formData) {
     if (formData.connectToilet || formData.connectWashingMachine) {
-        return 3.0; // 3000L minimum for house use
+        return 3000; // 3000L minimum for house use
     }
-    return 0.8; // 800L minimum for garden only
+    return 800; // 800L minimum for garden only
 }
 
 // Find suitable product
 function findSuitableProduct(size, formData) {
-    // Convert size from m³ to liters
-    const sizeInLiters = size * 1000;
+    // Size is already in liters
+    const sizeInLiters = size;
 
     // Determine product type
     const needsHouseSystem = formData.connectToilet || formData.connectWashingMachine;
@@ -217,9 +211,9 @@ function displayResults(results) {
     // Update result values
     document.getElementById('resultHouseArea').textContent = `${results.houseArea} m²`;
     document.getElementById('resultRainAmount').textContent = `${results.annualRainfall} mm`;
-    document.getElementById('resultRainTotal').textContent = `${results.rainTotal} m³/year`;
+    document.getElementById('resultRainTotal').textContent = `${results.rainYield} L/year`;
     document.getElementById('resultWaterDemand').textContent = `${results.waterDemand} L/year`;
-    document.getElementById('resultCisternSize').textContent = `${results.recommendedSize} m³`;
+    document.getElementById('resultCisternSize').textContent = `${results.recommendedSize} L`;
 
     if (results.product) {
         document.getElementById('resultProduct').textContent =
