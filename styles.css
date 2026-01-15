@@ -6,9 +6,9 @@
 }
 
 :root {
-    --primary-blue: #3D5B75;
-    --primary-dark: #2E4557;
-    --accent-blue: #41A5D8;
+    --primary-blue: #0078D7;
+    --primary-dark: #005A9C;
+    --accent-blue: #0078D7;
     --text-dark: #333333;
     --text-light: #666666;
     --text-white: #FFFFFF;
@@ -18,7 +18,7 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: var(--text-dark);
     background-color: var(--bg-light);
@@ -33,19 +33,19 @@ body {
 
 /* Header */
 header {
-    background-color: white;
-    padding: 15px 0;
+    background-color: var(--primary-blue);
+    padding: 20px 0;
     margin-bottom: 20px;
-    border-bottom: 3px solid var(--primary-blue);
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .logo h1 {
-    color: var(--primary-blue);
-    font-size: 1.8rem;
+    color: var(--text-white);
+    font-size: 2rem;
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     text-align: center;
+    margin: 0;
 }
 
 /* Configurator Card */
@@ -58,10 +58,11 @@ header {
 
 .configurator-card h2 {
     color: var(--text-dark);
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid var(--bg-light);
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid var(--primary-blue);
+    font-weight: 700;
 }
 
 /* Form Styles */
@@ -135,7 +136,7 @@ form > button[type="submit"] {
 /* Buttons */
 .btn-calculate {
     width: 100%;
-    padding: 12px;
+    padding: 14px;
     background-color: var(--accent-blue);
     color: white;
     border: none;
@@ -145,10 +146,12 @@ form > button[type="submit"] {
     cursor: pointer;
     transition: background-color 0.3s, transform 0.1s;
     margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .btn-calculate:hover {
-    background-color: #3692C1;
+    background-color: var(--primary-dark);
     transform: translateY(-1px);
 }
 
@@ -171,7 +174,7 @@ form > button[type="submit"] {
 }
 
 .btn-email:hover {
-    background-color: #3692C1;
+    background-color: var(--primary-dark);
 }
 
 .btn-link {
@@ -205,8 +208,9 @@ form > button[type="submit"] {
 
 .results h3 {
     color: var(--primary-blue);
-    font-size: 1.3rem;
-    margin-bottom: 15px;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    font-weight: 700;
 }
 
 .result-item {
