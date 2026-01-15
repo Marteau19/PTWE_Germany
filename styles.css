@@ -92,6 +92,29 @@ form > button[type="submit"] {
     font-size: 0.9rem;
 }
 
+/* Checkbox styling */
+.form-group.checkbox-group {
+    display: flex;
+    align-items: center;
+    padding-top: 8px;
+}
+
+.form-group.checkbox-group label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.form-group.checkbox-group input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    cursor: pointer;
+    accent-color: var(--accent-blue);
+}
+
 .form-group input,
 .form-group select {
     width: 100%;

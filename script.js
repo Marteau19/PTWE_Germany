@@ -55,8 +55,8 @@ function getFormData() {
         zipCode: document.getElementById('zipCode').value,
         irrigationDemand: document.getElementById('irrigationDemand').value,
         accessibility: document.getElementById('accessibility').value,
-        connectToilet: document.getElementById('connectToilet').value === 'yes',
-        connectWashingMachine: document.getElementById('connectWashingMachine').value === 'yes',
+        connectToilet: document.getElementById('connectToilet').checked,
+        connectWashingMachine: document.getElementById('connectWashingMachine').checked,
         numPeople: parseInt(document.getElementById('numPeople').value),
         comfortLevel: document.getElementById('comfortLevel').value
     };
