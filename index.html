@@ -76,15 +76,10 @@
                         </select>
                     </div>
 
-                    <!-- Comfort Level -->
+                    <!-- Number of People -->
                     <div class="form-group">
-                        <label for="comfortLevel">Comfort Level:</label>
-                        <select id="comfortLevel" required>
-                            <option value="">Select comfort level</option>
-                            <option value="basic">Basic - Simple system</option>
-                            <option value="comfortable">Comfortable - with filter-based and quiet inlet</option>
-                            <option value="premium">Premium - with advanced filtration</option>
-                        </select>
+                        <label for="numPeople">Number of People in Household:</label>
+                        <input type="number" id="numPeople" min="1" max="20" required>
                     </div>
 
                     <!-- Connect Toilet -->
@@ -103,10 +98,15 @@
                         </label>
                     </div>
 
-                    <!-- Number of People -->
-                    <div class="form-group">
-                        <label for="numPeople">Number of People in Household:</label>
-                        <input type="number" id="numPeople" min="1" max="20" required>
+                    <!-- Comfort Level -->
+                    <div class="form-group full-width">
+                        <label for="comfortLevel">Comfort Level:</label>
+                        <select id="comfortLevel" required>
+                            <option value="">Select comfort level</option>
+                            <option value="basic">Basic - Simple system</option>
+                            <option value="comfortable">Comfortable - with filter-based and quiet inlet</option>
+                            <option value="premium">Premium - with advanced filtration</option>
+                        </select>
                     </div>
 
                     <!-- Submit Button -->
