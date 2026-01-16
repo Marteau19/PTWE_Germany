@@ -6,18 +6,19 @@
 }
 
 :root {
-    --rewatec-blue: #0078BE;
-    --rewatec-dark-blue: #005A8C;
-    --rewatec-light-blue: #E6F3FA;
+    --primary-blue: #0078D7;
+    --primary-dark: #005A9C;
+    --accent-blue: #0078D7;
     --text-dark: #333333;
     --text-light: #666666;
-    --border-color: #E0E0E0;
-    --success-green: #5CB85C;
-    --bg-light: #F8F9FA;
+    --text-white: #FFFFFF;
+    --border-color: #D0D0D0;
+    --bg-light: #F5F5F5;
+    --bg-white: #FFFFFF;
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: var(--text-dark);
     background-color: var(--bg-light);
@@ -30,86 +31,110 @@ body {
     padding: 20px;
 }
 
-/* Header */
-header {
-    background-color: white;
-    padding: 20px 0;
-    margin-bottom: 30px;
-    border-bottom: 3px solid var(--rewatec-blue);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.logo h1 {
-    color: var(--rewatec-blue);
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-align: center;
-}
-
 /* Configurator Card */
 .configurator-card {
     background-color: white;
-    padding: 40px;
+    padding: 30px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .configurator-card h2 {
     color: var(--text-dark);
-    font-size: 1.75rem;
-    margin-bottom: 30px;
-    padding-bottom: 15px;
-    border-bottom: 2px solid var(--rewatec-light-blue);
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid var(--primary-blue);
+    font-weight: 700;
 }
 
 /* Form Styles */
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 20px;
+}
+
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 0;
+}
+
+.form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+form > button[type="submit"] {
+    grid-column: 1 / -1;
+    margin-top: 10px;
 }
 
 .form-group label {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     color: var(--text-dark);
     font-weight: 500;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+}
+
+/* Checkbox styling */
+.form-group.checkbox-group {
+    display: flex;
+    align-items: center;
+    padding-top: 8px;
+}
+
+.form-group.checkbox-group label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.form-group.checkbox-group input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    cursor: pointer;
+    accent-color: var(--accent-blue);
 }
 
 .form-group input,
 .form-group select {
     width: 100%;
-    padding: 12px;
+    padding: 10px;
     border: 1px solid var(--border-color);
     border-radius: 4px;
-    font-size: 1rem;
+    font-size: 0.95rem;
     transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 .form-group input:focus,
 .form-group select:focus {
     outline: none;
-    border-color: var(--rewatec-blue);
-    box-shadow: 0 0 0 3px rgba(0, 120, 190, 0.1);
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 0 3px rgba(65, 165, 216, 0.1);
 }
 
 /* Buttons */
 .btn-calculate {
     width: 100%;
-    padding: 15px;
-    background-color: var(--success-green);
+    padding: 14px;
+    background-color: var(--accent-blue);
     color: white;
     border: none;
     border-radius: 4px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.1s;
     margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .btn-calculate:hover {
-    background-color: #4CAF50;
+    background-color: var(--primary-dark);
     transform: translateY(-1px);
 }
 
@@ -120,7 +145,7 @@ header {
 .btn-email {
     width: 100%;
     padding: 12px;
-    background-color: var(--rewatec-blue);
+    background-color: var(--accent-blue);
     color: white;
     border: none;
     border-radius: 4px;
@@ -132,14 +157,14 @@ header {
 }
 
 .btn-email:hover {
-    background-color: var(--rewatec-dark-blue);
+    background-color: var(--primary-dark);
 }
 
 .btn-link {
     display: inline-block;
     padding: 10px 20px;
-    background-color: var(--rewatec-light-blue);
-    color: var(--rewatec-blue);
+    background-color: var(--bg-light);
+    color: var(--accent-blue);
     text-decoration: none;
     border-radius: 4px;
     font-weight: 500;
@@ -149,15 +174,15 @@ header {
 }
 
 .btn-link:hover {
-    background-color: var(--rewatec-blue);
+    background-color: var(--accent-blue);
     color: white;
 }
 
 /* Results Section */
 .results {
-    margin-top: 40px;
-    padding-top: 30px;
-    border-top: 2px solid var(--rewatec-light-blue);
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid var(--bg-light);
 }
 
 .results.hidden {
@@ -165,22 +190,24 @@ header {
 }
 
 .results h3 {
-    color: var(--rewatec-blue);
-    font-size: 1.5rem;
-    margin-bottom: 25px;
+    color: var(--primary-blue);
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    font-weight: 700;
 }
 
 .result-item {
     display: flex;
     justify-content: space-between;
-    padding: 12px 0;
+    padding: 10px 0;
     border-bottom: 1px solid var(--border-color);
+    font-size: 0.95rem;
 }
 
 .result-item.highlight {
-    background-color: var(--rewatec-light-blue);
-    padding: 15px;
-    margin: 10px 0;
+    background-color: var(--bg-light);
+    padding: 12px;
+    margin: 8px 0;
     border-radius: 4px;
     border-bottom: none;
     font-weight: 600;
@@ -192,7 +219,7 @@ header {
 }
 
 .result-item.highlight .result-label {
-    color: var(--rewatec-dark-blue);
+    color: var(--primary-dark);
 }
 
 .result-value {
@@ -201,7 +228,7 @@ header {
 }
 
 .result-item.highlight .result-value {
-    color: var(--rewatec-blue);
+    color: var(--primary-blue);
 }
 
 .result-actions {
@@ -238,12 +265,14 @@ footer {
         padding: 20px;
     }
 
-    .logo h1 {
-        font-size: 1.5rem;
+    form {
+        grid-template-columns: 1fr;
+        gap: 12px;
     }
 
     .configurator-card h2 {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
+        margin-bottom: 15px;
     }
 
     .result-item {
