@@ -3,158 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rewatec Cistern Configurator</title>
+    <title>Rewatec Zisternen-Konfigurator</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <main>
             <div class="configurator-card">
-                <h2>Cistern Configurator</h2>
+                <h2>Zisternen-Konfigurator</h2>
 
                 <form id="cisternForm">
-                    <!-- Roof Type -->
+                    <!-- Dachtyp -->
                     <div class="form-group">
-                        <label for="roofType">Roof Type (Runoff Coefficient):</label>
+                        <label for="roofType">Dachtyp (Abflussbeiwert):</label>
                         <select id="roofType" required>
-                            <option value="">Select roof type</option>
-                            <option value="0.8">Flat Roof (0.8)</option>
-                            <option value="0.9">Pitched Roof / Steep Roof (0.9)</option>
-                            <option value="0.6">Green Roof (0.6)</option>
-                            <option value="0.7">Gravel Roof (0.7)</option>
+                            <option value="">Dachtyp auswählen</option>
+                            <option value="0.8">Flachdach (0,8)</option>
+                            <option value="0.9">Satteldach / Steildach (0,9)</option>
+                            <option value="0.6">Gründach (0,6)</option>
+                            <option value="0.7">Kiesdach (0,7)</option>
                         </select>
                     </div>
 
-                    <!-- House Length -->
+                    <!-- Hauslänge -->
                     <div class="form-group">
-                        <label for="houseLength">House Length (m):</label>
+                        <label for="houseLength">Hauslänge (m):</label>
                         <input type="number" id="houseLength" min="0" step="0.1" required>
                     </div>
 
-                    <!-- House Width -->
+                    <!-- Hausbreite -->
                     <div class="form-group">
-                        <label for="houseWidth">House Width (m):</label>
+                        <label for="houseWidth">Hausbreite (m):</label>
                         <input type="number" id="houseWidth" min="0" step="0.1" required>
                     </div>
 
-                    <!-- Garden Area -->
+                    <!-- Gartenfläche -->
                     <div class="form-group">
-                        <label for="gardenArea">Garden Area (m²):</label>
+                        <label for="gardenArea">Gartenfläche (m²):</label>
                         <input type="number" id="gardenArea" min="0" step="1" required>
                     </div>
 
-                    <!-- ZIP Code -->
+                    <!-- PLZ -->
                     <div class="form-group">
-                        <label for="zipCode">ZIP Code:</label>
+                        <label for="zipCode">PLZ:</label>
                         <input type="text" id="zipCode" pattern="[0-9]{5}" maxlength="5" required>
                     </div>
 
-                    <!-- Irrigation Demand -->
+                    <!-- Bewässerungsintensität -->
                     <div class="form-group">
-                        <label for="irrigationDemand">Irrigation Demand:</label>
+                        <label for="irrigationDemand">Bewässerungsintensität:</label>
                         <select id="irrigationDemand" required>
-                            <option value="">Select irrigation demand</option>
-                            <option value="80">Low (80 L/m²/year)</option>
-                            <option value="140">Medium (140 L/m²/year)</option>
-                            <option value="200">High (200 L/m²/year)</option>
+                            <option value="">Bewässerungsintensität auswählen</option>
+                            <option value="80">Gering (80 L/m²/Jahr)</option>
+                            <option value="140">Mittel (140 L/m²/Jahr)</option>
+                            <option value="200">Hoch (200 L/m²/Jahr)</option>
                         </select>
                     </div>
 
-                    <!-- Accessibility -->
+                    <!-- Belastungsklasse -->
                     <div class="form-group">
-                        <label for="accessibility">Accessibility:</label>
+                        <label for="accessibility">Belastungsklasse:</label>
                         <select id="accessibility" required>
-                            <option value="">Select accessibility</option>
-                            <option value="walkable">Walkable</option>
-                            <option value="car-accessible">Car accessible</option>
+                            <option value="">Belastungsklasse auswählen</option>
+                            <option value="walkable">Begehbar</option>
+                            <option value="car-accessible">PKW-befahrbar</option>
                         </select>
                     </div>
 
-                    <!-- Number of People -->
+                    <!-- Anzahl Personen -->
                     <div class="form-group">
-                        <label for="numPeople">Number of People in Household:</label>
+                        <label for="numPeople">Anzahl Personen im Haushalt:</label>
                         <input type="number" id="numPeople" min="1" max="20" required>
                     </div>
 
-                    <!-- Connect Toilet -->
+                    <!-- Toilettenspülung -->
                     <div class="form-group checkbox-group">
                         <label>
                             <input type="checkbox" id="connectToilet">
-                            Connect Toilet
+                            Nutzung für Toilettenspülung
                         </label>
                     </div>
 
-                    <!-- Connect Washing Machine -->
+                    <!-- Waschmaschine -->
                     <div class="form-group checkbox-group">
                         <label>
                             <input type="checkbox" id="connectWashingMachine">
-                            Connect Washing Machine
+                            Nutzung für Waschmaschine
                         </label>
                     </div>
 
-                    <!-- Comfort Level -->
+                    <!-- Komfort Level -->
                     <div class="form-group full-width">
-                        <label for="comfortLevel">Comfort Level:</label>
+                        <label for="comfortLevel">Komfort Level:</label>
                         <select id="comfortLevel" required>
-                            <option value="">Select comfort level</option>
-                            <option value="economical">Basic - with filter basket and pump for garden irrigation</option>
-                            <option value="comfortable">Comfortable - with quiet inlet and high-performance pump</option>
+                            <option value="">Komfort Level auswählen</option>
+                            <option value="economical">Einstiegsvariante mit Filterkorb und Pumpe zur Gartenbewässerung</option>
+                            <option value="comfortable">Komfortvariante mit beruhigtem Zulauf und leistungsstarker Pumpe</option>
                         </select>
                     </div>
 
-                    <!-- Submit Button -->
-                    <button type="submit" class="btn-calculate">Calculate Cistern</button>
+                    <!-- Berechnen -->
+                    <button type="submit" class="btn-calculate">Ergebnis ermitteln</button>
                 </form>
 
-                <!-- Results Section -->
+                <!-- Ergebnisse -->
                 <div id="results" class="results hidden">
-                    <h3>Calculation Results</h3>
+                    <h3>Berechnungsergebnisse</h3>
 
                     <div class="result-item">
-                        <span class="result-label">House Area:</span>
+                        <span class="result-label">Dachfläche:</span>
                         <span class="result-value" id="resultHouseArea">-</span>
                     </div>
 
                     <div class="result-item">
-                        <span class="result-label">Rain Amount:</span>
+                        <span class="result-label">Niederschlagsmenge:</span>
                         <span class="result-value" id="resultRainAmount">-</span>
                     </div>
 
                     <div class="result-item">
-                        <span class="result-label">Rain Yield:</span>
+                        <span class="result-label">Regenwasserertrag:</span>
                         <span class="result-value" id="resultRainTotal">-</span>
                     </div>
 
                     <div class="result-item">
-                        <span class="result-label">Total Water Demand:</span>
+                        <span class="result-label">Gesamtwasserbedarf:</span>
                         <span class="result-value" id="resultWaterDemand">-</span>
                     </div>
 
                     <div class="result-item highlight">
-                        <span class="result-label">Recommended Cistern Size:</span>
+                        <span class="result-label">Empfohlene Zisternengröße:</span>
                         <span class="result-value" id="resultCisternSize">-</span>
                     </div>
 
                     <div class="result-item highlight">
-                        <span class="result-label">Recommended Product:</span>
+                        <span class="result-label">Empfohlenes Produkt:</span>
                         <span class="result-value" id="resultProduct">-</span>
                     </div>
 
                     <div class="result-actions">
-                        <a href="#" id="downloadManual" class="btn-link" target="_blank">Download Manual</a>
-                        <a href="#" id="viewProduct" class="btn-link" target="_blank">View Product</a>
-                        <a href="#" id="viewTender" class="btn-link" target="_blank">Tender Text</a>
+                        <a href="#" id="downloadManual" class="btn-link" target="_blank">Einbauanleitung herunterladen</a>
+                        <a href="#" id="viewProduct" class="btn-link" target="_blank">Produktseite</a>
+                        <a href="#" id="viewTender" class="btn-link" target="_blank">Ausschreibungstext</a>
                     </div>
 
                     <div class="product-image"></div>
 
-                    <button type="button" class="btn-email" id="emailResults">Email Results</button>
+                    <button type="button" class="btn-email" id="emailResults">Ergebnis per E-Mail senden</button>
                 </div>
             </div>
         </main>
 
         <footer>
-            <p>&copy; 2026 Rewatec - Rainwater Recovery Systems</p>
+            <p>&copy; 2026 Rewatec - Regenwassernutzungssysteme</p>
         </footer>
     </div>
 

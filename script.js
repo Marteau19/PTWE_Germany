@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         document.getElementById('connectWashingMachine').addEventListener('change', updateComfortLevel);
     } catch (error) {
         console.error('Error loading data:', error);
-        showError('Failed to load configuration data. Please refresh the page.');
+        showError('Konfigurationsdaten konnten nicht geladen werden. Bitte Seite neu laden.');
     }
 });
 
@@ -35,15 +35,15 @@ function updateComfortLevel() {
 
     if (toilet || washing) {
         comfortSelect.innerHTML = `
-            <option value="">Select comfort level</option>
-            <option value="hauswasserwerk">System with pressure pump (pump in basement/utility room)</option>
-            <option value="tauchpumpe">System with submersible pump (pump in tank)</option>
+            <option value="">Komfort Level auswählen</option>
+            <option value="hauswasserwerk">System mit Hauswasserwerk (Pumpe im Keller/HWR)</option>
+            <option value="tauchpumpe">System mit Tauchdruckpumpe (Pumpe im Tank)</option>
         `;
     } else {
         comfortSelect.innerHTML = `
-            <option value="">Select comfort level</option>
-            <option value="economical">Basic - with filter basket and pump for garden irrigation</option>
-            <option value="comfortable">Comfortable - with quiet inlet and high-performance pump</option>
+            <option value="">Komfort Level auswählen</option>
+            <option value="economical">Einstiegsvariante mit Filterkorb und Pumpe zur Gartenbewässerung</option>
+            <option value="comfortable">Komfortvariante mit beruhigtem Zulauf und leistungsstarker Pumpe</option>
         `;
     }
 }
@@ -92,12 +92,12 @@ function validateForm(formData) {
     if (!formData.roofType || !formData.houseLength || !formData.houseWidth ||
         !formData.gardenArea || !formData.zipCode || !formData.irrigationDemand ||
         !formData.accessibility || !formData.numPeople || !formData.comfortLevel) {
-        showError('Please fill in all required fields.');
+        showError('Bitte alle Pflichtfelder ausfüllen.');
         return false;
     }
 
     if (formData.zipCode.length !== 5) {
-        showError('Please enter a valid 5-digit ZIP code.');
+        showError('Bitte eine gültige 5-stellige Postleitzahl eingeben.');
         return false;
     }
 
@@ -154,7 +154,7 @@ function getRainfallByZIP(zipCode) {
     }
 
     // Return default if not found (700mm is typical German average)
-    console.warn('ZIP code not found, using default:', zipCode);
+    console.warn('PLZ nicht gefunden, Standardwert wird verwendet:', zipCode);
     return 700;
 }
 
@@ -190,8 +190,8 @@ function displayResults(results) {
     // Update result values
     document.getElementById('resultHouseArea').textContent = `${results.houseArea} m²`;
     document.getElementById('resultRainAmount').textContent = `${results.annualRainfall} mm`;
-    document.getElementById('resultRainTotal').textContent = `${results.rainYield} L/year`;
-    document.getElementById('resultWaterDemand').textContent = `${results.waterDemand} L/year`;
+    document.getElementById('resultRainTotal').textContent = `${results.rainYield} L/Jahr`;
+    document.getElementById('resultWaterDemand').textContent = `${results.waterDemand} L/Jahr`;
     document.getElementById('resultCisternSize').textContent = `${results.recommendedSize} L`;
 
     if (results.product) {
@@ -248,7 +248,7 @@ function displayResults(results) {
         }
     } else {
         document.getElementById('resultProduct').textContent =
-            'No suitable product found. Please contact us for a custom solution.';
+            'Kein passendes Produkt gefunden. Bitte kontaktieren Sie uns für eine individuelle Auslegung.';
         document.getElementById('downloadManual').style.display = 'none';
         document.getElementById('viewProduct').style.display = 'none';
         const tenderLink = document.getElementById('viewTender');
@@ -292,33 +292,33 @@ function emailResults() {
     // Build links section
     let linksSection = '';
     if (productUrl || manualUrl || tenderUrl) {
-        linksSection = '\n\nProduct Links:\n';
+        linksSection = '\n\nProdukt-Links:\n';
         if (productUrl) {
-            linksSection += `View Product: ${productUrl}\n`;
+            linksSection += `Produktseite: ${productUrl}\n`;
         }
         if (manualUrl) {
-            linksSection += `Download Manual: ${manualUrl}\n`;
+            linksSection += `Einbauanleitung: ${manualUrl}\n`;
         }
         if (tenderUrl) {
-            linksSection += `Tender Text: ${tenderUrl}\n`;
+            linksSection += `Ausschreibungstext: ${tenderUrl}\n`;
         }
     }
 
-    const subject = 'Rewatec Cistern Configurator Results';
+    const subject = 'Rewatec Zisternen-Konfigurator Ergebnis';
     const body = `
-Cistern Configuration Results
-=============================
+Berechnungsergebnisse Zisternen-Konfigurator
+============================================
 
-House Area: ${results.houseArea}
-Annual Rainfall: ${results.rainAmount}
-Total Rainwater Collection: ${results.rainTotal}
-Water Demand: ${results.waterDemand}
+Dachfläche: ${results.houseArea}
+Niederschlagsmenge: ${results.rainAmount}
+Regenwasserertrag: ${results.rainTotal}
+Gesamtwasserbedarf: ${results.waterDemand}
 
-Recommended Cistern Size: ${results.cisternSize}
-Recommended Product: ${results.product}${linksSection}
+Empfohlene Zisternengröße: ${results.cisternSize}
+Empfohlenes Produkt: ${results.product}${linksSection}
 
 ---
-Generated by Rewatec Cistern Configurator
+Erstellt mit dem Rewatec Zisternen-Konfigurator
     `.trim();
 
     const mailtoLink = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
