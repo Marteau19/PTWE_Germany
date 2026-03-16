@@ -42,7 +42,7 @@ function updateComfortLevel() {
     } else {
         comfortSelect.innerHTML = `
             <option value="">Komfort Level auswählen</option>
-            <option value="economical">Einstiegsvariante mit Filterkorb und Pumpe zur Gartenbewässerung</option>
+            <option value="economical">Einstiegsvariante mit Filterkorb und Pumpe zur Bewässerung mit Handbrause</option>
             <option value="comfortable">Komfortvariante mit beruhigtem Zulauf und leistungsstarker Pumpe</option>
         `;
     }
@@ -248,7 +248,7 @@ function displayResults(results) {
         }
     } else {
         document.getElementById('resultProduct').textContent =
-            'Kein passendes Produkt gefunden. Bitte kontaktieren Sie uns für eine individuelle Auslegung.';
+            'Kein passendes Produkt gefunden. Bitte kontaktieren Sie uns, in Ihrem Fall bedarf es einer individuellen Auslegung.';
         document.getElementById('downloadManual').style.display = 'none';
         document.getElementById('viewProduct').style.display = 'none';
         const tenderLink = document.getElementById('viewTender');
@@ -294,13 +294,13 @@ function emailResults() {
     if (productUrl || manualUrl || tenderUrl) {
         linksSection = '\n\nProdukt-Links:\n';
         if (productUrl) {
-            linksSection += `Produktseite: ${productUrl}\n`;
+            linksSection += `Produktseite mit weitergehenden Informationen: ${productUrl}\n`;
         }
         if (manualUrl) {
-            linksSection += `Einbauanleitung: ${manualUrl}\n`;
+            linksSection += `Einbauanleitung herunterladen: ${manualUrl}\n`;
         }
         if (tenderUrl) {
-            linksSection += `Ausschreibungstext: ${tenderUrl}\n`;
+            linksSection += `Zum Ausschreibungstext: ${tenderUrl}\n`;
         }
     }
 
