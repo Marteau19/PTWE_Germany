@@ -18,10 +18,10 @@
                         <label for="roofType">Dachtyp (Abflussbeiwert):</label>
                         <select id="roofType" required>
                             <option value="">Dachtyp auswählen</option>
-                            <option value="0.8">Flachdach (0,8)</option>
-                            <option value="0.9">Satteldach / Steildach (0,9)</option>
-                            <option value="0.6">Gründach (0,6)</option>
-                            <option value="0.7">Kiesdach (0,7)</option>
+                            <option value="0.8">Flachdach (0.8)</option>
+                            <option value="0.9">Satteldach/Steildach (0.9)</option>
+                            <option value="0.6">Gründach (0.6)</option>
+                            <option value="0.7">Kiesdach (0.7)</option>
                         </select>
                     </div>
 
@@ -45,7 +45,7 @@
 
                     <!-- PLZ -->
                     <div class="form-group">
-                        <label for="zipCode">PLZ:</label>
+                        <label for="zipCode">PLZ (DE):</label>
                         <input type="text" id="zipCode" pattern="[0-9]{5}" maxlength="5" required>
                     </div>
 
@@ -65,7 +65,7 @@
                         <label for="accessibility">Belastungsklasse:</label>
                         <select id="accessibility" required>
                             <option value="">Belastungsklasse auswählen</option>
-                            <option value="walkable">Begehbar</option>
+                            <option value="walkable">begehbar</option>
                             <option value="car-accessible">PKW-befahrbar</option>
                         </select>
                     </div>
@@ -80,7 +80,7 @@
                     <div class="form-group checkbox-group">
                         <label>
                             <input type="checkbox" id="connectToilet">
-                            Nutzung für Toilettenspülung
+                            Nutzung für Toilettenspülung?
                         </label>
                     </div>
 
@@ -88,7 +88,7 @@
                     <div class="form-group checkbox-group">
                         <label>
                             <input type="checkbox" id="connectWashingMachine">
-                            Nutzung für Waschmaschine
+                            Nutzung für die Waschmaschine?
                         </label>
                     </div>
 
@@ -97,7 +97,7 @@
                         <label for="comfortLevel">Komfort Level:</label>
                         <select id="comfortLevel" required>
                             <option value="">Komfort Level auswählen</option>
-                            <option value="economical">Einstiegsvariante mit Filterkorb und Pumpe zur Gartenbewässerung</option>
+                            <option value="economical">Einstiegsvariante mit Filterkorb und Pumpe zur Gartenbewässerung (z. B. mit Handbrause)</option>
                             <option value="comfortable">Komfortvariante mit beruhigtem Zulauf und leistungsstarker Pumpe</option>
                         </select>
                     </div>
@@ -131,7 +131,7 @@
                     </div>
 
                     <div class="result-item highlight">
-                        <span class="result-label">Empfohlene Zisternengröße:</span>
+                        <span class="result-label">Empfohlene Tankgröße (rechnerisch):</span>
                         <span class="result-value" id="resultCisternSize">-</span>
                     </div>
 
@@ -142,13 +142,13 @@
 
                     <div class="result-actions">
                         <a href="#" id="downloadManual" class="btn-link" target="_blank">Einbauanleitung herunterladen</a>
-                        <a href="#" id="viewProduct" class="btn-link" target="_blank">Produktseite</a>
-                        <a href="#" id="viewTender" class="btn-link" target="_blank">Ausschreibungstext</a>
+                        <a href="#" id="viewProduct" class="btn-link" target="_blank">Produktseite mit weitergehenden Informationen</a>
+                        <a href="#" id="viewTender" class="btn-link" target="_blank">Zum Ausschreibungstext</a>
                     </div>
 
                     <div class="product-image"></div>
 
-                    <button type="button" class="btn-email" id="emailResults">Ergebnis per E-Mail senden</button>
+                    <button type="button" class="btn-email" id="emailResults">Ergebnis per E-Mail erhalten</button>
                 </div>
             </div>
         </main>
