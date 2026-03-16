@@ -18,10 +18,10 @@
                         <label for="roofType">Roof Type (Runoff Coefficient):</label>
                         <select id="roofType" required>
                             <option value="">Select roof type</option>
-                            <option value="0.9">Flat Roof (0.9)</option>
-                            <option value="0.8">Pitched Roof - Tiles (0.8)</option>
-                            <option value="0.85">Pitched Roof - Metal (0.85)</option>
-                            <option value="0.95">Pitched Roof - Concrete (0.95)</option>
+                            <option value="0.8">Flat Roof (0.8)</option>
+                            <option value="0.9">Pitched Roof / Steep Roof (0.9)</option>
+                            <option value="0.6">Green Roof (0.6)</option>
+                            <option value="0.7">Gravel Roof (0.7)</option>
                         </select>
                     </div>
 
@@ -54,9 +54,9 @@
                         <label for="irrigationDemand">Irrigation Demand:</label>
                         <select id="irrigationDemand" required>
                             <option value="">Select irrigation demand</option>
-                            <option value="low">Low</option>
-                            <option value="medium">Medium</option>
-                            <option value="high">High</option>
+                            <option value="80">Low (80 L/m²/year)</option>
+                            <option value="140">Medium (140 L/m²/year)</option>
+                            <option value="200">High (200 L/m²/year)</option>
                         </select>
                     </div>
 
@@ -66,7 +66,7 @@
                         <select id="accessibility" required>
                             <option value="">Select accessibility</option>
                             <option value="walkable">Walkable</option>
-                            <option value="vehicle">Vehicle</option>
+                            <option value="car-accessible">Car accessible</option>
                         </select>
                     </div>
 
@@ -97,9 +97,8 @@
                         <label for="comfortLevel">Comfort Level:</label>
                         <select id="comfortLevel" required>
                             <option value="">Select comfort level</option>
-                            <option value="basic">Basic - Simple system</option>
-                            <option value="comfortable">Comfortable - with filter-based and quiet inlet</option>
-                            <option value="premium">Premium - with advanced filtration</option>
+                            <option value="economical">Basic - with filter basket and pump for garden irrigation</option>
+                            <option value="comfortable">Comfortable - with quiet inlet and high-performance pump</option>
                         </select>
                     </div>
 
@@ -144,11 +143,10 @@
                     <div class="result-actions">
                         <a href="#" id="downloadManual" class="btn-link" target="_blank">Download Manual</a>
                         <a href="#" id="viewProduct" class="btn-link" target="_blank">View Product</a>
+                        <a href="#" id="viewTender" class="btn-link" target="_blank">Tender Text</a>
                     </div>
 
-                    <div class="product-image">
-                        <img id="productImage" src="" alt="Recommended Product">
-                    </div>
+                    <div class="product-image"></div>
 
                     <button type="button" class="btn-email" id="emailResults">Email Results</button>
                 </div>

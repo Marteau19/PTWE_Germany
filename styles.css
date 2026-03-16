@@ -240,8 +240,14 @@ form > button[type="submit"] {
     text-align: center;
 }
 
+.product-image {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
 .product-image img {
-    max-width: 100%;
+    max-width: 200px;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
