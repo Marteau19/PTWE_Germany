@@ -2,7 +2,7 @@
   {
     "name": "NEO 1500 Garten Basic",
     "size": 1500,
-    "minsize": 0,
+    "minsize": 1,
     "access": "walkable",
     "comfort": "economical",
     "image1": "https://rewatec.de/wp-content/uploads/rwne1500_img_flachtank-neo_1500l.jpg",
@@ -14,7 +14,7 @@
   {
     "name": "NEO 3000 Garten Basic",
     "size": 3000,
-    "minsize": 1501,
+    "minsize": 2000,
     "access": "walkable",
     "comfort": "economical",
     "image1": "https://rewatec.de/wp-content/uploads/rwne3000_img_flachtank-neo_3000l.jpg",
@@ -26,7 +26,7 @@
   {
     "name": "NEO 5000 Garten Basic",
     "size": 5000,
-    "minsize": 3001,
+    "minsize": 3500,
     "access": "walkable",
     "comfort": "economical",
     "image1": "https://rewatec.de/wp-content/uploads/rwne5000_img_flachtank-neo_5000l.jpg",
@@ -38,7 +38,7 @@
   {
     "name": "NEO 7100 Garten Basic",
     "size": 7100,
-    "minsize": 5001,
+    "minsize": 5500,
     "access": "walkable",
     "comfort": "economical",
     "image1": "https://rewatec.de/wp-content/uploads/rwne7100_img_flachtank-neo_7100l.jpg",
@@ -50,7 +50,7 @@
   {
     "name": "NEO 10000 Garten Basic",
     "size": 10000,
-    "minsize": 7101,
+    "minsize": 7600,
     "access": "walkable",
     "comfort": "economical",
     "image1": "https://rewatec.de/wp-content/uploads/rwne10x0_img_flachtank-neo_10000l.jpg",
@@ -62,7 +62,7 @@
   {
     "name": "NEO 13000 Garten Basic",
     "size": 13000,
-    "minsize": 10001,
+    "minsize": 10500,
     "access": "walkable",
     "comfort": "economical",
     "image1": "https://rewatec.de/wp-content/uploads/rwne13x0_img_flachtank-neo_13000l.jpg",
@@ -74,7 +74,7 @@
   {
     "name": "NEO 15000 Garten Basic",
     "size": 15000,
-    "minsize": 13001,
+    "minsize": 13500,
     "access": "walkable",
     "comfort": "economical",
     "image1": "https://rewatec.de/wp-content/uploads/rwne15x0_img_flachtank-neo_15000l.jpg",
@@ -86,7 +86,7 @@
   {
     "name": "NEO 1500 Garten Profi",
     "size": 1500,
-    "minsize": 0,
+    "minsize": 1,
     "access": "walkable",
     "comfort": "comfortable",
     "image1": "https://rewatec.de/wp-content/uploads/rwne1500_img_flachtank-neo_1500l.jpg",
@@ -98,7 +98,7 @@
   {
     "name": "NEO 3000 Garten Profi",
     "size": 3000,
-    "minsize": 1501,
+    "minsize": 2000,
     "access": "walkable",
     "comfort": "comfortable",
     "image1": "https://rewatec.de/wp-content/uploads/rwne3000_img_flachtank-neo_3000l.jpg",
@@ -110,7 +110,7 @@
   {
     "name": "NEO 5000 Garten Profi",
     "size": 5000,
-    "minsize": 3001,
+    "minsize": 3500,
     "access": "walkable",
     "comfort": "comfortable",
     "image1": "https://rewatec.de/wp-content/uploads/rwne5000_img_flachtank-neo_5000l.jpg",
@@ -122,7 +122,7 @@
   {
     "name": "NEO 7100 Garten Profi",
     "size": 7100,
-    "minsize": 5001,
+    "minsize": 5500,
     "access": "walkable",
     "comfort": "comfortable",
     "image1": "https://rewatec.de/wp-content/uploads/rwne7100_img_flachtank-neo_7100l.jpg",
@@ -134,7 +134,7 @@
   {
     "name": "NEO 10000 Garten Profi",
     "size": 10000,
-    "minsize": 7101,
+    "minsize": 7600,
     "access": "walkable",
     "comfort": "comfortable",
     "image1": "https://rewatec.de/wp-content/uploads/rwne10x0_img_flachtank-neo_10000l.jpg",
@@ -146,7 +146,7 @@
   {
     "name": "NEO 13000 Garten Profi",
     "size": 13000,
-    "minsize": 10001,
+    "minsize": 10500,
     "access": "walkable",
     "comfort": "comfortable",
     "image1": "https://rewatec.de/wp-content/uploads/rwne13x0_img_flachtank-neo_13000l.jpg",
@@ -158,7 +158,7 @@
   {
     "name": "NEO 15000 Garten Profi",
     "size": 15000,
-    "minsize": 13001,
+    "minsize": 13500,
     "access": "walkable",
     "comfort": "comfortable",
     "image1": "https://rewatec.de/wp-content/uploads/rwne15x0_img_flachtank-neo_15000l.jpg",
@@ -170,7 +170,7 @@
   {
     "name": "NEO 1500 Garten Basic",
     "size": 1500,
-    "minsize": 0,
+    "minsize": 1,
     "access": "car-accessible",
     "comfort": "economical",
     "image1": "https://rewatec.de/wp-content/uploads/rwne1500_img_flachtank-neo_1500l.jpg",
@@ -182,7 +182,7 @@
   {
     "name": "NEO 3000 Garten Basic",
     "size": 3000,
-    "minsize": 1501,
+    "minsize": 2000,
     "access": "car-accessible",
     "comfort": "economical",
     "image1": "https://rewatec.de/wp-content/uploads/rwne3000_img_flachtank-neo_3000l.jpg",
@@ -194,7 +194,7 @@
   {
     "name": "NEO 5000 Garten Basic",
     "size": 5000,
-    "minsize": 3001,
+    "minsize": 3500,
     "access": "car-accessible",
     "comfort": "economical",
     "image1": "https://rewatec.de/wp-content/uploads/rwne5000_img_flachtank-neo_5000l.jpg",
@@ -206,7 +206,7 @@
   {
     "name": "NEO 7100 Garten Basic",
     "size": 7100,
-    "minsize": 5001,
+    "minsize": 5500,
     "access": "car-accessible",
     "comfort": "economical",
     "image1": "https://rewatec.de/wp-content/uploads/rwne7100_img_flachtank-neo_7100l.jpg",
@@ -218,7 +218,7 @@
   {
     "name": "NEO 10000 Garten Basic",
     "size": 10000,
-    "minsize": 7101,
+    "minsize": 7600,
     "access": "car-accessible",
     "comfort": "economical",
     "image1": "https://rewatec.de/wp-content/uploads/rwne10x0_img_flachtank-neo_10000l.jpg",
@@ -230,7 +230,7 @@
   {
     "name": "NEO 13000 Garten Basic",
     "size": 13000,
-    "minsize": 10001,
+    "minsize": 10500,
     "access": "car-accessible",
     "comfort": "economical",
     "image1": "https://rewatec.de/wp-content/uploads/rwne13x0_img_flachtank-neo_13000l.jpg",
@@ -242,7 +242,7 @@
   {
     "name": "NEO 15000 Garten Basic",
     "size": 15000,
-    "minsize": 13001,
+    "minsize": 13500,
     "access": "car-accessible",
     "comfort": "economical",
     "image1": "https://rewatec.de/wp-content/uploads/rwne15x0_img_flachtank-neo_15000l.jpg",
@@ -254,7 +254,7 @@
   {
     "name": "NEO 1500 Garten Profi",
     "size": 1500,
-    "minsize": 0,
+    "minsize": 1,
     "access": "car-accessible",
     "comfort": "comfortable",
     "image1": "https://rewatec.de/wp-content/uploads/rwne1500_img_flachtank-neo_1500l.jpg",
@@ -266,7 +266,7 @@
   {
     "name": "NEO 3000 Garten Profi",
     "size": 3000,
-    "minsize": 1501,
+    "minsize": 2000,
     "access": "car-accessible",
     "comfort": "comfortable",
     "image1": "https://rewatec.de/wp-content/uploads/rwne3000_img_flachtank-neo_3000l.jpg",
@@ -278,7 +278,7 @@
   {
     "name": "NEO 5000 Garten Profi",
     "size": 5000,
-    "minsize": 3001,
+    "minsize": 3500,
     "access": "car-accessible",
     "comfort": "comfortable",
     "image1": "https://rewatec.de/wp-content/uploads/rwne5000_img_flachtank-neo_5000l.jpg",
@@ -290,7 +290,7 @@
   {
     "name": "NEO 7100 Garten Profi",
     "size": 7100,
-    "minsize": 5001,
+    "minsize": 5500,
     "access": "car-accessible",
     "comfort": "comfortable",
     "image1": "https://rewatec.de/wp-content/uploads/rwne7100_img_flachtank-neo_7100l.jpg",
@@ -302,7 +302,7 @@
   {
     "name": "NEO 10000 Garten Profi",
     "size": 10000,
-    "minsize": 7101,
+    "minsize": 7600,
     "access": "car-accessible",
     "comfort": "comfortable",
     "image1": "https://rewatec.de/wp-content/uploads/rwne10x0_img_flachtank-neo_10000l.jpg",
@@ -314,7 +314,7 @@
   {
     "name": "NEO 13000 Garten Profi",
     "size": 13000,
-    "minsize": 10001,
+    "minsize": 10500,
     "access": "car-accessible",
     "comfort": "comfortable",
     "image1": "https://rewatec.de/wp-content/uploads/rwne13x0_img_flachtank-neo_13000l.jpg",
@@ -326,7 +326,7 @@
   {
     "name": "NEO 15000 Garten Profi",
     "size": 15000,
-    "minsize": 13001,
+    "minsize": 13500,
     "access": "car-accessible",
     "comfort": "comfortable",
     "image1": "https://rewatec.de/wp-content/uploads/rwne15x0_img_flachtank-neo_15000l.jpg",
@@ -338,7 +338,7 @@
   {
     "name": "NEO 1500 McRain",
     "size": 1500,
-    "minsize": 0,
+    "minsize": 1,
     "access": "walkable",
     "comfort": "hauswasserwerk",
     "image1": "https://rewatec.de/wp-content/uploads/rwne1500_img_flachtank-neo_1500l.jpg",
@@ -350,7 +350,7 @@
   {
     "name": "NEO 3000 McRain",
     "size": 3000,
-    "minsize": 1501,
+    "minsize": 2000,
     "access": "walkable",
     "comfort": "hauswasserwerk",
     "image1": "https://rewatec.de/wp-content/uploads/rwne3000_img_flachtank-neo_3000l.jpg",
@@ -362,7 +362,7 @@
   {
     "name": "NEO 5000 McRain",
     "size": 5000,
-    "minsize": 3001,
+    "minsize": 3500,
     "access": "walkable",
     "comfort": "hauswasserwerk",
     "image1": "https://rewatec.de/wp-content/uploads/rwne5000_img_flachtank-neo_5000l.jpg",
@@ -374,7 +374,7 @@
   {
     "name": "NEO 7100 McRain",
     "size": 7100,
-    "minsize": 5001,
+    "minsize": 5500,
     "access": "walkable",
     "comfort": "hauswasserwerk",
     "image1": "https://rewatec.de/wp-content/uploads/rwne7100_img_flachtank-neo_7100l.jpg",
@@ -386,7 +386,7 @@
   {
     "name": "NEO 10000 McRain",
     "size": 10000,
-    "minsize": 7101,
+    "minsize": 7600,
     "access": "walkable",
     "comfort": "hauswasserwerk",
     "image1": "https://rewatec.de/wp-content/uploads/rwne10x0_img_flachtank-neo_10000l.jpg",
@@ -398,7 +398,7 @@
   {
     "name": "NEO 13000 McRain",
     "size": 13000,
-    "minsize": 10001,
+    "minsize": 10500,
     "access": "walkable",
     "comfort": "hauswasserwerk",
     "image1": "https://rewatec.de/wp-content/uploads/rwne13x0_img_flachtank-neo_13000l.jpg",
@@ -410,7 +410,7 @@
   {
     "name": "NEO 15000 McRain",
     "size": 15000,
-    "minsize": 13001,
+    "minsize": 13500,
     "access": "walkable",
     "comfort": "hauswasserwerk",
     "image1": "https://rewatec.de/wp-content/uploads/rwne15x0_img_flachtank-neo_15000l.jpg",
@@ -422,7 +422,7 @@
   {
     "name": "NEO 1500 McRain",
     "size": 1500,
-    "minsize": 0,
+    "minsize": 1,
     "access": "car-accessible",
     "comfort": "hauswasserwerk",
     "image1": "https://rewatec.de/wp-content/uploads/rwne1500_img_flachtank-neo_1500l.jpg",
@@ -434,7 +434,7 @@
   {
     "name": "NEO 3000 McRain",
     "size": 3000,
-    "minsize": 1501,
+    "minsize": 2000,
     "access": "car-accessible",
     "comfort": "hauswasserwerk",
     "image1": "https://rewatec.de/wp-content/uploads/rwne3000_img_flachtank-neo_3000l.jpg",
@@ -446,7 +446,7 @@
   {
     "name": "NEO 5000 McRain",
     "size": 5000,
-    "minsize": 3001,
+    "minsize": 3500,
     "access": "car-accessible",
     "comfort": "hauswasserwerk",
     "image1": "https://rewatec.de/wp-content/uploads/rwne5000_img_flachtank-neo_5000l.jpg",
@@ -458,7 +458,7 @@
   {
     "name": "NEO 7100 McRain",
     "size": 7100,
-    "minsize": 5001,
+    "minsize": 5500,
     "access": "car-accessible",
     "comfort": "hauswasserwerk",
     "image1": "https://rewatec.de/wp-content/uploads/rwne7100_img_flachtank-neo_7100l.jpg",
@@ -470,7 +470,7 @@
   {
     "name": "NEO 10000 McRain",
     "size": 10000,
-    "minsize": 7101,
+    "minsize": 7600,
     "access": "car-accessible",
     "comfort": "hauswasserwerk",
     "image1": "https://rewatec.de/wp-content/uploads/rwne10x0_img_flachtank-neo_10000l.jpg",
@@ -482,7 +482,7 @@
   {
     "name": "NEO 13000 McRain",
     "size": 13000,
-    "minsize": 10001,
+    "minsize": 10500,
     "access": "car-accessible",
     "comfort": "hauswasserwerk",
     "image1": "https://rewatec.de/wp-content/uploads/rwne13x0_img_flachtank-neo_13000l.jpg",
@@ -494,7 +494,7 @@
   {
     "name": "NEO 15000 McRain",
     "size": 15000,
-    "minsize": 13001,
+    "minsize": 13500,
     "access": "car-accessible",
     "comfort": "hauswasserwerk",
     "image1": "https://rewatec.de/wp-content/uploads/rwne15x0_img_flachtank-neo_15000l.jpg",
@@ -506,7 +506,7 @@
   {
     "name": "NEO 1500 Diver",
     "size": 1500,
-    "minsize": 0,
+    "minsize": 1,
     "access": "walkable",
     "comfort": "tauchpumpe",
     "image1": "https://rewatec.de/wp-content/uploads/rwne1500_img_flachtank-neo_1500l.jpg",
@@ -518,7 +518,7 @@
   {
     "name": "NEO 3000 Diver",
     "size": 3000,
-    "minsize": 1501,
+    "minsize": 2000,
     "access": "walkable",
     "comfort": "tauchpumpe",
     "image1": "https://rewatec.de/wp-content/uploads/rwne3000_img_flachtank-neo_3000l.jpg",
@@ -530,7 +530,7 @@
   {
     "name": "NEO 5000 Diver",
     "size": 5000,
-    "minsize": 3001,
+    "minsize": 3500,
     "access": "walkable",
     "comfort": "tauchpumpe",
     "image1": "https://rewatec.de/wp-content/uploads/rwne5000_img_flachtank-neo_5000l.jpg",
@@ -542,7 +542,7 @@
   {
     "name": "NEO 7100 Diver",
     "size": 7100,
-    "minsize": 5001,
+    "minsize": 5500,
     "access": "walkable",
     "comfort": "tauchpumpe",
     "image1": "https://rewatec.de/wp-content/uploads/rwne7100_img_flachtank-neo_7100l.jpg",
@@ -554,7 +554,7 @@
   {
     "name": "NEO 10000 Diver",
     "size": 10000,
-    "minsize": 7101,
+    "minsize": 7600,
     "access": "walkable",
     "comfort": "tauchpumpe",
     "image1": "https://rewatec.de/wp-content/uploads/rwne10x0_img_flachtank-neo_10000l.jpg",
@@ -566,7 +566,7 @@
   {
     "name": "NEO 13000 Diver",
     "size": 13000,
-    "minsize": 10001,
+    "minsize": 10500,
     "access": "walkable",
     "comfort": "tauchpumpe",
     "image1": "https://rewatec.de/wp-content/uploads/rwne13x0_img_flachtank-neo_13000l.jpg",
@@ -578,7 +578,7 @@
   {
     "name": "NEO 15000 Diver",
     "size": 15000,
-    "minsize": 13001,
+    "minsize": 13500,
     "access": "walkable",
     "comfort": "tauchpumpe",
     "image1": "https://rewatec.de/wp-content/uploads/rwne15x0_img_flachtank-neo_15000l.jpg",
@@ -590,7 +590,7 @@
   {
     "name": "NEO 1500 Diver",
     "size": 1500,
-    "minsize": 0,
+    "minsize": 1,
     "access": "car-accessible",
     "comfort": "tauchpumpe",
     "image1": "https://rewatec.de/wp-content/uploads/rwne1500_img_flachtank-neo_1500l.jpg",
@@ -602,7 +602,7 @@
   {
     "name": "NEO 3000 Diver",
     "size": 3000,
-    "minsize": 1501,
+    "minsize": 2000,
     "access": "car-accessible",
     "comfort": "tauchpumpe",
     "image1": "https://rewatec.de/wp-content/uploads/rwne3000_img_flachtank-neo_3000l.jpg",
@@ -614,7 +614,7 @@
   {
     "name": "NEO 5000 Diver",
     "size": 5000,
-    "minsize": 3001,
+    "minsize": 3500,
     "access": "car-accessible",
     "comfort": "tauchpumpe",
     "image1": "https://rewatec.de/wp-content/uploads/rwne5000_img_flachtank-neo_5000l.jpg",
@@ -626,7 +626,7 @@
   {
     "name": "NEO 7100 Diver",
     "size": 7100,
-    "minsize": 5001,
+    "minsize": 5500,
     "access": "car-accessible",
     "comfort": "tauchpumpe",
     "image1": "https://rewatec.de/wp-content/uploads/rwne7100_img_flachtank-neo_7100l.jpg",
@@ -638,7 +638,7 @@
   {
     "name": "NEO 10000 Diver",
     "size": 10000,
-    "minsize": 7101,
+    "minsize": 7600,
     "access": "car-accessible",
     "comfort": "tauchpumpe",
     "image1": "https://rewatec.de/wp-content/uploads/rwne10x0_img_flachtank-neo_10000l.jpg",
@@ -650,7 +650,7 @@
   {
     "name": "NEO 13000 Diver",
     "size": 13000,
-    "minsize": 10001,
+    "minsize": 10500,
     "access": "car-accessible",
     "comfort": "tauchpumpe",
     "image1": "https://rewatec.de/wp-content/uploads/rwne13x0_img_flachtank-neo_13000l.jpg",
@@ -662,7 +662,7 @@
   {
     "name": "NEO 15000 Diver",
     "size": 15000,
-    "minsize": 13001,
+    "minsize": 13500,
     "access": "car-accessible",
     "comfort": "tauchpumpe",
     "image1": "https://rewatec.de/wp-content/uploads/rwne15x0_img_flachtank-neo_15000l.jpg",
