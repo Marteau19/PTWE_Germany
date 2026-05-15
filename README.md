@@ -21,9 +21,9 @@ PTWE_Germany/
 ├── index.html              # Main HTML file
 ├── styles.css              # Stylesheet with Rewatec branding
 ├── script.js               # JavaScript logic and calculations
-├── cisternProducts.json    # Product catalog data
-├── plzRainData.json       # German ZIP code to rainfall mapping
-└── README.md              # This file
+├── cisternProducts.json    # Product catalogue (57 entries)
+├── plzRainData.json        # German ZIP code to rainfall mapping (24,590 entries)
+└── README.md               # This file
 ```
 
 ## How It Works
@@ -123,23 +123,26 @@ To test the calculator on your local machine:
 
 ### Adding/Modifying Products
 
-Edit `cisternProducts.json`:
+Edit `cisternProducts.json`. Required fields per entry:
 
 ```json
 {
-  "id": 11,
-  "name": "Product Name",
-  "capacity": 5000,
-  "type": "house",
-  "category": "comfortable",
-  "accessibility": "vehicle",
-  "price": 3500,
-  "features": ["Feature 1", "Feature 2"],
-  "manualUrl": "https://...",
-  "productUrl": "https://...",
-  "imageUrl": "images/product.jpg"
+  "name": "NEO 3000 Garten Basic",
+  "size": 3000,
+  "minsize": 2000,
+  "access": "walkable",
+  "comfort": "economical",
+  "image1": "https://rewatec.de/wp-content/uploads/...",
+  "image2": "https://rewatec.de/wp-content/uploads/...",
+  "tender": "https://ausschreiben.de/...",
+  "website": "https://rewatec.de/...",
+  "pdf": "https://rewatec.de/wp-content/uploads/pdf/..."
 }
 ```
+
+- `access`: `"walkable"` or `"car-accessible"`
+- `comfort`: `"economical"`, `"comfortable"`, `"hauswasserwerk"`, or `"tauchpumpe"`
+- `tender`: URL to tender text, or `""` if not available
 
 ### Updating Rainfall Data
 
@@ -147,10 +150,11 @@ Edit `plzRainData.json` to add or modify ZIP code ranges and rainfall amounts.
 
 ### Styling
 
-All visual styling is in `styles.css`. Key colors are defined as CSS variables at the top:
-- `--rewatec-blue`: Primary brand color
-- `--rewatec-dark-blue`: Darker shade for hover states
-- `--rewatec-light-blue`: Light background color
+All visual styling is in `styles.css`. Key colours are defined as CSS variables at the top:
+- `--primary-blue`: Main brand colour (`#3D5B75`)
+- `--primary-dark`: Hover state colour (`#2C4459`)
+- `--accent-blue`: Button/link colour (`#41A5D8`)
+- `--bg-light`: Light background (`#F0F4F8`)
 
 ## Integration with WordPress
 
