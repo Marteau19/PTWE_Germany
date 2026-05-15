@@ -18,20 +18,23 @@ document.addEventListener('DOMContentLoaded', async () => {
         document.getElementById('cisternForm').addEventListener('submit', handleFormSubmit);
         document.getElementById('emailResults').addEventListener('click', emailResults);
 
-        // Update comfort options when toilet/washing machine selection changes
+        // Update comfort options and people field when toilet/washing machine selection changes
         document.getElementById('connectToilet').addEventListener('change', updateComfortLevel);
         document.getElementById('connectWashingMachine').addEventListener('change', updateComfortLevel);
+        updateComfortLevel();
     } catch (error) {
         console.error('Error loading data:', error);
         showError('Konfigurationsdaten konnten nicht geladen werden. Bitte Seite neu laden.');
     }
 });
 
-// Update comfort level options based on household connection
+// Update comfort level options and people field based on household connection
 function updateComfortLevel() {
     const toilet = document.getElementById('connectToilet').checked;
     const washing = document.getElementById('connectWashingMachine').checked;
     const comfortSelect = document.getElementById('comfortLevel');
+    const numPeopleGroup = document.getElementById('numPeopleGroup');
+    const numPeopleInput = document.getElementById('numPeople');
 
     if (toilet || washing) {
         comfortSelect.innerHTML = `
@@ -39,12 +42,15 @@ function updateComfortLevel() {
             <option value="hauswasserwerk">System mit Hauswasserwerk (Pumpe im Keller/HWR)</option>
             <option value="tauchpumpe">System mit Tauchdruckpumpe (Pumpe im Tank)</option>
         `;
+        numPeopleGroup.style.display = 'block';
     } else {
         comfortSelect.innerHTML = `
             <option value="">Komfort Level auswählen</option>
             <option value="economical">Einstiegsvariante mit Filterkorb und Pumpe zur Bewässerung mit Handbrause</option>
             <option value="comfortable">Komfortvariante mit beruhigtem Zulauf und leistungsstarker Pumpe</option>
         `;
+        numPeopleGroup.style.display = 'none';
+        numPeopleInput.value = '';
     }
 }
 
@@ -89,9 +95,11 @@ function getFormData() {
 
 // Validate form data
 function validateForm(formData) {
+    const needsPeople = formData.connectToilet || formData.connectWashingMachine;
     if (!formData.roofType || !formData.houseLength || !formData.houseWidth ||
         !formData.gardenArea || !formData.zipCode || !formData.irrigationDemand ||
-        !formData.accessibility || !formData.numPeople || !formData.comfortLevel) {
+        !formData.accessibility || !formData.comfortLevel ||
+        (needsPeople && !formData.numPeople)) {
         showError('Bitte alle Pflichtfelder ausfüllen.');
         return false;
     }
@@ -306,6 +314,11 @@ function emailResults() {
 
     const subject = 'Rewatec Zisternen-Konfigurator Ergebnis';
     const body = `
+Vielen Dank für den Besuch unseres Konfigurators.
+Nachstehend erhalten Sie Ihr individuelles Ergebnis.
+Für Rückfragen oder zur Nennung einer Bezugsquelle senden Sie diese E-Mail gerne an: info.ptwe.de@premiertech.com
+Alternativ kontaktieren Sie uns telefonisch unter: 038847-62390
+
 Berechnungsergebnisse Zisternen-Konfigurator
 ============================================
 
